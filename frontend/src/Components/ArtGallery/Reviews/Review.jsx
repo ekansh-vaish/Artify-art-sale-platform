@@ -12,7 +12,7 @@ const {id} = useParams();
 async function submitReview(e) {
 e.preventDefault();
 try {
-await axios.post(`http://localhost:8080/review/postreview/${id}`, {
+await axios.post(`https://artify-art-sale-platform.onrender.com/review/postreview/${id}`, {
 comment,
 rating:Number(rating),
 createdAt : new Date()

@@ -23,7 +23,7 @@ const handleSubmit = async (e) => {
 e.preventDefault();
 try {
 setLoading(true);
-const res = await axios.post('http://localhost:8080/competition/create', formData, {
+const res = await axios.post('https://artify-art-sale-platform.onrender.com/competition/create', formData, {
 withCredentials: true,
 headers: { "Content-Type": "application/json" }
 });

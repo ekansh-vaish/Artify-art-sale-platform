@@ -12,7 +12,7 @@ const navigate = useNavigate();
 
 async function fetchArt() {
 try {
-const response = await axios.get("http://localhost:8080/artwork/getart", {
+const response = await axios.get("https://artify-art-sale-platform.onrender.com/artwork/getart", {
 withCredentials: true
 });
 

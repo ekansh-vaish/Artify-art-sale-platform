@@ -11,7 +11,7 @@ const navigate = useNavigate();
 
 async function GetItem() {
 try {
-const response = await axios.get("http://localhost:8080/cart/getitem", {
+const response = await axios.get("https://artify-art-sale-platform.onrender.com/cart/getitem", {
 withCredentials: true
 });
 setItems(response.data.data);
@@ -22,7 +22,7 @@ console.log(error);
 
 async function TrashItem(itemId) {
 try {
-await axios.delete(`http://localhost:8080/cart/deleteitem/${itemId}`, {
+await axios.delete(`https://artify-art-sale-platform.onrender.com/cart/deleteitem/${itemId}`, {
 withCredentials: true
 });
 GetItem();
@@ -35,7 +35,7 @@ async function handlePayment() {
 try {
 const totalPrice = items.reduce((sum, item) => sum + (item.artwork?.price || 0), 0);
 const response = await axios.post(
-'http://localhost:8080/payment/paypalpayment',
+'https://artify-art-sale-platform.onrender.com/payment/paypalpayment',
 { total: totalPrice },
 { withCredentials: true }
 );

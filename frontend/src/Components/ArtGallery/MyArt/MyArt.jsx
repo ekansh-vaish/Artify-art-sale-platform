@@ -12,7 +12,7 @@ const User = JSON.parse(localStorage.getItem("User"));
 const navigate = useNavigate();
 async function MineArt() {
 try {
-const response = await axios.get("http://localhost:8080/artwork/myart", {
+const response = await axios.get("https://artify-art-sale-platform.onrender.com/artwork/myart", {
 withCredentials: true
 });
 console.log(response);
@@ -34,7 +34,7 @@ console.log("Error fetching artworks:", err);
 
 async function ArtReview(artworkId) {
 try {
-const response = await axios.get(`http://localhost:8080/review/getReviews/${artworkId}`, {
+const response = await axios.get(`https://artify-art-sale-platform.onrender.com/review/getReviews/${artworkId}`, {
 withCredentials: true
 });
 setReviewMap(prev => ({ ...prev, [artworkId]: response.data.response }));
@@ -93,7 +93,7 @@ className="art-image"
 <button
 className="btn btn-sm btn-danger mt-2"
 onClick={async () => {
-await axios.delete(`http://localhost:8080/review/deleteReview/${rev._id}`, {
+await axios.delete(`https://artify-art-sale-platform.onrender.com/review/deleteReview/${rev._id}`, {
 withCredentials: true
 });
 ArtReview(item._id); // Refresh reviews

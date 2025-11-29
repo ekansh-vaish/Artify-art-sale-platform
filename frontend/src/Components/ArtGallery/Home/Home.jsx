@@ -18,7 +18,7 @@ const handleShow = () => setShow(true);
 
 async function ArtWork() {
 try {
-const response = await axios.get("http://localhost:8080/artwork/getart", {
+const response = await axios.get("https://artify-art-sale-platform.onrender.com/artwork/getart", {
 withCredentials: true
 });
 setArts(response.data.data);
@@ -90,7 +90,7 @@ variant="outline-danger"
 onClick={async (e) => {
   e.stopPropagation();
   try {
-  const response=  await axios.post("http://localhost:8080/cart/additem", {
+  const response=  await axios.post("https://artify-art-sale-platform.onrender.com/cart/additem", {
       artworkId: item._id
     }, {
       withCredentials: true

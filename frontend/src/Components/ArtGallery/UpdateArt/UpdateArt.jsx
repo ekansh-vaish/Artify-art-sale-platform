@@ -30,7 +30,7 @@ function UpdateArt({ selectedId }) {
     if (image) form.append('image', image);
 
     try {
-       await axios.put(`http://localhost:8080/artwork/updateart/${selectedId}`, form, {
+       await axios.put(`https://artify-art-sale-platform.onrender.com/artwork/updateart/${selectedId}`, form, {
         withCredentials: true
       });
       alert('Artwork Updated Successfully!');

@@ -20,7 +20,7 @@ const handleShow = () => setShow(true);
 async function FetchComp() {
 try {
 const res = await axios.get(
-`http://localhost:8080/competition/getdetail/${id}`,
+`https://artify-art-sale-platform.onrender.com/competition/getdetail/${id}`,
 { withCredentials: true }
 );
 

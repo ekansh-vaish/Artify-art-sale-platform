@@ -14,7 +14,7 @@ const User = JSON.parse(localStorage.getItem("User"));
 async function Logout() {
 try {
 await axios.post(
-"http://localhost:8080/auth/logout",
+"https://artify-art-sale-platform.onrender.com/auth/logout",
 {},
 { withCredentials: true }
 );

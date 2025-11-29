@@ -23,7 +23,7 @@ setReview({ ...review, [name]: value });
 async function FetchData() {
 try {
  await axios.get(
-`http://localhost:8080/participate/getparticipants/${selectedId}`,
+`https://artify-art-sale-platform.onrender.com/participate/getparticipants/${selectedId}`,
 { withCredentials: true }
 );
 
@@ -37,7 +37,7 @@ console.log("❌ Error fetching participants:", err);
 async function PostReview(e) {
 e.preventDefault();
  await axios.post(
-`http://localhost:8080/CompReview/postReview/${selectedId}`,
+`https://artify-art-sale-platform.onrender.com/CompReview/postReview/${selectedId}`,
 review,
 { withCredentials: true }
 );
@@ -50,7 +50,7 @@ fetchReviews();
 const fetchReviews = async () => {
 try {
 const res = await axios.get(
-`http://localhost:8080/CompReview/getArtreview/${selectedId}`,
+`https://artify-art-sale-platform.onrender.com/CompReview/getArtreview/${selectedId}`,
 { withCredentials: true }
 );
 

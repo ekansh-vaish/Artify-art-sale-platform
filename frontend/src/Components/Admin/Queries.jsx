@@ -11,7 +11,7 @@ function Queries() {
 
   async function ContactQuery() {
     try {
-      const response = await axios.get("http://localhost:8080/contact/getqueries");
+      const response = await axios.get("https://artify-art-sale-platform.onrender.com/contact/getqueries");
       console.log(response);
       setQuery(response.data.response);
     } catch (error) {

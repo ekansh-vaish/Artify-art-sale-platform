@@ -20,7 +20,7 @@ setForm({ ...form, [e.target.name]: e.target.value });
 
 const handleSubmit = async (e) => {
 e.preventDefault();
- await axios.post("http://localhost:8080/contact/addquery", form, {
+ await axios.post("https://artify-art-sale-platform.onrender.com/contact/addquery", form, {
 withCredentials: true,
 });
 setStatus("✅ Thank you! Your message has been sent.");

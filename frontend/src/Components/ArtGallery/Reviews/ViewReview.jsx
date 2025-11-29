@@ -13,7 +13,7 @@ const [error,setError] = useState();
 const User = JSON.parse(localStorage.getItem("User"));
 async function Reviews() {
 try{
-const res = await axios.get(`http://localhost:8080/review/getReviews/${id}`,
+const res = await axios.get(`https://artify-art-sale-platform.onrender.com/review/getReviews/${id}`,
 {
 withCredentials : true 
 }
@@ -31,7 +31,7 @@ console.log(err);
 
 async function DeleteReview(itemid) {
 try{
-const response = await axios.delete(`http://localhost:8080/review/deleteReview/${itemid}`,
+const response = await axios.delete(`https://artify-art-sale-platform.onrender.com/review/deleteReview/${itemid}`,
 {
 withCredentials: true 
 }

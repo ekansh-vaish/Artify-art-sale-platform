@@ -15,7 +15,7 @@ const role = User?.role === "admin";
 
 async function fetchCompetition() {
 try {
-const response = await axios.get("http://localhost:8080/competition/getdetail", { withCredentials: true });
+const response = await axios.get("https://artify-art-sale-platform.onrender.com/competition/getdetail", { withCredentials: true });
 setCompetitions(response.data.response);
 } catch (error) {
 console.log(error);
@@ -24,7 +24,7 @@ console.log(error);
 
 async function DestroyCompetition(itemid) {
 try {
-await axios.delete(`http://localhost:8080/competition/deleteevent/${itemid}`, { withCredentials: true });
+await axios.delete(`https://artify-art-sale-platform.onrender.com/competition/deleteevent/${itemid}`, { withCredentials: true });
 fetchCompetition();
 } catch (error) {
 console.log(error);
@@ -33,7 +33,7 @@ console.log(error);
 
 async function getReviews() {
 try {
-const response = await axios.get("http://localhost:8080/CompReview/getReview");
+const response = await axios.get("https://artify-art-sale-platform.onrender.com/CompReview/getReview");
 setArtReview(response.data.response);
 } catch (error) {
 console.log(error);

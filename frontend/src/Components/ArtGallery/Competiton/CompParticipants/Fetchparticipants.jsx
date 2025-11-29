@@ -14,7 +14,7 @@ const User = JSON.parse(localStorage.getItem("User"));
 async function FetchData() {
 try {
 const result = await axios.get(
-`http://localhost:8080/participate/getparticipants/${competitionId}`,
+`https://artify-art-sale-platform.onrender.com/participate/getparticipants/${competitionId}`,
 { withCredentials: true }
 );
 setFetchedData(result.data.response);
@@ -33,7 +33,7 @@ if (!confirmDelete) return;
 
 try {
 await axios.delete(
-`http://localhost:8080/participate/deleteparticipants/${itemId}`,
+`https://artify-art-sale-platform.onrender.com/participate/deleteparticipants/${itemId}`,
 { withCredentials: true }
 );
 FetchData(); 

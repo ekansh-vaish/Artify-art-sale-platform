@@ -13,7 +13,7 @@ function Slider() {
 
   async function FetchArts() {
     try {
-      const response = await axios.get("http://localhost:8080/artwork/getart", {
+      const response = await axios.get("https://artify-art-sale-platform.onrender.com/artwork/getart", {
         withCredentials: true 
       });
       setArts(response.data.data);

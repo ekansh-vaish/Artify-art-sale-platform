@@ -10,7 +10,7 @@ const [error,setError] = useState(null);
 const fetchReviews = async () => {
 try {
 const res = await axios.get(
-`http://localhost:8080/CompReview/getArtreview/${ReviewFetch}`,
+`https://artify-art-sale-platform.onrender.com/CompReview/getArtreview/${ReviewFetch}`,
 { withCredentials: true }
 );
 // console.log(res);

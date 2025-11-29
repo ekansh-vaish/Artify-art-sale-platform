@@ -19,7 +19,7 @@ const handleShow = () => setShow(true);
 const User = JSON.parse(localStorage.getItem("User"));
 async function ArtWork() {
 try {
-const response = await axios.get(`http://localhost:8080/artwork/getart/${id}`, {
+const response = await axios.get(`https://artify-art-sale-platform.onrender.com/artwork/getart/${id}`, {
 withCredentials: true
 });
 
