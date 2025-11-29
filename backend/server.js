@@ -31,7 +31,7 @@ main()
 
 app.use(cors(
   {
-    origin:  "https://artify-art-sale-platform-oxzj.vercel.app",, 
+    origin:  "https://artify-art-sale-platform-oxzj.vercel.app", 
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   credentials: true  
   }
