@@ -29,7 +29,7 @@ Artify is a global community for artists to connect, share ideas,
 and display their creativity with the world. Build your identity 
 and grow your audience.
 </p>
-<button onClick={() => navigate("/home")}>Explore Artworks</button>
+<button onClick={() => navigate("/explore")}>Explore Artworks</button>
 </div>
 </div>
 
@@ -42,7 +42,7 @@ and grow your audience.
 Upload your creativity, get featured, and become a part of a 
 growing global network of talented artists.
 </p>
-<button onClick={() => navigate("/home")}>Explore Artworks</button>
+<button onClick={() => navigate("/explore")}>Explore Artworks</button>
 </div>
 </div>
 
@@ -55,7 +55,7 @@ growing global network of talented artists.
 Whether you’re a beginner or a professional, Artify gives you 
 the platform to shine and reach people everywhere.
 </p>
-<button onClick={() => navigate("/home")}>Explore Artworks</button>
+<button onClick={() => navigate("/explore")}>Explore Artworks</button>
 </div>
 </div>
 
@@ -68,7 +68,7 @@ the platform to shine and reach people everywhere.
 Meet creators around the world, participate in events, and 
 collaborate to grow your creative journey.
 </p>
-<button onClick={() => navigate("/home")}>Explore Artworks</button>
+<button onClick={() => navigate("/explore")}>Explore Artworks</button>
 </div>
 </div>
 
