@@ -1,0 +1,19 @@
+*
+{
+margin: 0;
+padding: 0;    
+}
+
+.main
+{
+height: 150px;   
+width: auto;
+text-align: center;
+background-color: rgba(235, 224, 197, 0.641);
+flex-wrap: wrap;
+margin: 4px; 
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}

@@ -1,0 +1,47 @@
+.competition-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.glass-card {
+  width: 40rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.input-animate {
+  transition: all 0.3s ease;
+}
+.input-animate:focus {
+  border-color: #673ab7;
+  box-shadow: 0 0 10px rgba(103, 58, 183, 0.5);
+}
+
+.btn-animate {
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, #673ab7, #9c27b0);
+  border: none;
+}
+.btn-animate:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #9c27b0, #e91e63);
+}
+
+.animate-title {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { color: #673ab7; }
+  50% { color: #e91e63; }
+  100% { color: #673ab7; }
+}

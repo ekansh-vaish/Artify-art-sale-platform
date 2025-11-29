@@ -1,0 +1,102 @@
+.add-art-container {
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSed5wB1ro8Cc7IHyi6nGtEDqOBLe_cU867HB-TheUc5IDfzgZOZEiCY_UjxygL1DkYBuk&usqp=CAU);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.glass-card {
+  width: 70rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.input-animate {
+  transition: all 0.3s ease;
+}
+.input-animate:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+}
+
+.btn-animate {
+  transition: all 0.3s ease;
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  border: none;
+}
+.btn-animate:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #ff5722, #e91e63);
+}
+
+.upload-box {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 2px dashed #27b0b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f3e5f5;
+}
+.upload-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(156, 39, 176, 0.4);
+}
+/* 
+.upload-placeholder {
+  font-size: 1rem;
+  color: #6a1b9a;
+  font-weight: 500;
+} */
+
+.banner-img {
+  height: 500px;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+.banner-img:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #ffe082, #ffccbc);
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+.fade-in-delay {
+  animation: fadeIn 2s ease-in-out;
+}
+.slide-up {
+  animation: slideUp 1.5s ease-in-out;
+}
+.animate-title {
+  animation: pulse 2s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { color: #ff9800; }
+  50% { color: #e91e63; }
+  100% { color: #ff9800; }
+}
