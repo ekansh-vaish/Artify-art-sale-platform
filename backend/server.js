@@ -31,7 +31,7 @@ main()
 
 app.use(cors(
   {
-    origin: 'http://localhost:5173', 
+    origin: 'artify-art-sale-platform-sfu4.vercel.app', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   credentials: true  
   }

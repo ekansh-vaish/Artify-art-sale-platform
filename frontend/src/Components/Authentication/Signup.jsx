@@ -56,7 +56,7 @@ formData.append("password", Userdata.password);
 formData.append("image", Userdata.image);
 
 try {
-await axios.post("http://localhost:8080/auth/signup", formData, {
+await axios.post("https://artify-art-sale-platform.onrender.com/auth/signup", formData, {
 withCredentials: true
 });
 

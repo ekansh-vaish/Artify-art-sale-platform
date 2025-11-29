@@ -35,7 +35,7 @@ module.exports.signup = async(req,res,next) =>
    await registeruser.save();
 
    
-const payload = { // payload krke humne ek object bnaya ha jisme id , email , role dalenge jo token generate krne mai help krega behalf of email
+const payload = { 
 id : registeruser.id,
 email : registeruser.email,
 image : registeruser.image
@@ -71,8 +71,8 @@ if(!user)
   const token = generateToken(payload);
   res.cookie("token",token,{
 httpOnly : true,
-secure : false,
-sameSite : "lax",
+secure : true,
+sameSite : "none",
 maxAge : 24* 60 * 60 * 1000,
 })
  return res.status(201).json({message : "Login Successfully",payload});
@@ -88,7 +88,7 @@ module.exports.Logout = async(req,res) =>
 res.clearCookie("token",{
 httpOnly : true,
   secure: process.env.NODE_ENV === "production",
-sameSite : "lax"
+sameSite : "none"
 })  
 res.status(200).json({Message : "Logged Out Successfully"})
 }

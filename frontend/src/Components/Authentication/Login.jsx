@@ -32,7 +32,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/auth/login",
+        "https://artify-art-sale-platform.onrender.com/auth/login",
         Userdata,
         { withCredentials: true }
       );
