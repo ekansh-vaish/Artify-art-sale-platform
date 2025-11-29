@@ -34,6 +34,7 @@ function Footer() {
               <li><a href="/explore" style={footerLinkStyle} onMouseOver={e => e.target.style.color = footerLinkHover.color} onMouseOut={e => e.target.style.color = footerLinkStyle.color}>Arts</a></li>
               <li><a href="/myart" style={footerLinkStyle} onMouseOver={e => e.target.style.color = footerLinkHover.color} onMouseOut={e => e.target.style.color = footerLinkStyle.color}>My Art</a></li>
               <li><a href="/competitionlist" style={footerLinkStyle} onMouseOver={e => e.target.style.color = footerLinkHover.color} onMouseOut={e => e.target.style.color = footerLinkStyle.color}>Competition List</a></li>
+            <li><a href="/contactus" style={footerLinkStyle} onMouseOver={e => e.target.style.color = footerLinkHover.color} onMouseOut={e => e.target.style.color = footerLinkStyle.color}>Contact Us</a></li>
             </ul>
           </div>
 
