@@ -31,12 +31,15 @@ main()
 
 app.use(cors(
   {
+<<<<<<< HEAD
     origin:  "https://artify-art-sale-platform-oxzj.vercel.app", 
+=======
+    origin:  "https://artify-art-sale-platform-oxzj.vercel.app",
+>>>>>>> 7e51658 (deploy1)
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   credentials: true  
   }
-))
-
+));
 app.use(express.json());
 app.use(cookieParser());
 

@@ -36,7 +36,6 @@ form.append('description', formData.description);
 form.append('category', formData.category);
 form.append('price', formData.price);
 form.append('image', image);
-
 try {
 await axios.post('https://artify-art-sale-platform.onrender.com/artwork/sendart', form, {
 withCredentials: true,
