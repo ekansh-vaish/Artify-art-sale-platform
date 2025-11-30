@@ -36,7 +36,7 @@ navigate("/explore");
 async function DeleteAart(selectedId) {
 try {
 
-await axios.delete(`https://artify-art-sale-platform.onrender.com/deleteart/${selectedId}`, {
+await axios.delete(`https://artify-art-sale-platform.onrender.com/artwork/deleteart/${selectedId}`, {
 withCredentials: true
 });
 alert("Artwork deleted successfully!");
