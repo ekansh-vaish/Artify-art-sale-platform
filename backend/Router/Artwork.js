@@ -21,7 +21,7 @@ router.put("/updateart/:id",jwtAuthMiddleware,ArtOwnerShip,validateArt,upload.si
 router.get("/getart/:id",jwtAuthMiddleware,WrapAsync(ArtWorkControllers.GetArtworkId));
 
 // -------------------- READ ALL --------------------
-router.get("/getart",jwtAuthMiddleware,WrapAsync(ArtWorkControllers.Artwork));
+router.get("/getart",WrapAsync(ArtWorkControllers.Artwork));
 
 router.get("/myart", jwtAuthMiddleware, WrapAsync(ArtWorkControllers.myArt));
 
