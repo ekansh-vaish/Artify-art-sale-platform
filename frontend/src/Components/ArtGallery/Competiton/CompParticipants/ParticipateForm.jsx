@@ -32,7 +32,7 @@ Userform.append("image", formData.image);
 
 try {
 await axios.post(
-`http://localhost:8080/participate/participate/${competitionId}`,
+`https://artify-art-sale-platform.onrender.com/participate/${competitionId}`,
 Userform,
 {
 withCredentials: true,
