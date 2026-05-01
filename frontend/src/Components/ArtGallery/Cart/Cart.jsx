@@ -83,7 +83,7 @@ return (
 <td>{index + 1}</td>
 <td>
 <img
-src={item.artwork.image.url}
+src={item.artwork?.image.url}
 alt={item.artwork?.title}
 style={{ width: '80px', borderRadius: '8px', cursor: "pointer" }}
 onClick={() => navigate(`/art/${item.artwork._id}`)}
